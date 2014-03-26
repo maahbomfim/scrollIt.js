@@ -94,7 +94,9 @@
             $('[data-scroll-nav=' + ndx + ']').addClass(settings.activeClass);
             
             var hash = $('[data-scroll-nav=' + ndx + ']').attr('href');
-            location.hash = hash;
+            if(hash){
+                location.hash = hash;
+            }
         };
 
         /**
